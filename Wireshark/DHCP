@@ -1,0 +1,15 @@
+# DHCP
+## Objetivo
+Capturar y analizar el proceso DHCP utilizando Wireshark
+
+## Escenario
+- Windows 11
+- Wireshark
+- DHCP Server
+
+##Procedimiento
+DHCP es un protocolo de asignación dinámica de direcciones IP. 
+Cuando conectamos la computadora a la red, lo primero que intentará hacer es conseguir información de direccionamiento. Para esto, enviará un mensaje DHCP Discover para encontrar un servidor DHCP.
+Antes de conectar el equipo, iniciamos la captura en Wireshark para capturar este proceso. 
+
+1.	DHCP DISCOVER: El cliente se conecta a la red. Envía un broadcast con IP destino 255.255.255.255 puerto destino 67. Como origen, utiliza la dirección 0.0.0.0:68. Esta solicitud llegará a todos los dispositivos dentro de la misma subred, pero solo será atendida si existe un servidor DHCP escuchando el puerto 67. 
