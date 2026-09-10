@@ -5,9 +5,10 @@ El proceso de asignación se puede ver en la imagen siguiente, con los 4 mensaje
 ![DORA](images/dora.png)
 
 En este laboratorio, vamos a analizar cómo un host se comunica con un servidor DHCP para obtener información de direccionamiento. Para capturar este proceso utilizaremos Wireshark para capturar la comunicación entre cliente y servidor.
+Antes de conectar la computadora a la red, iniciamos la captura en Wireshark. Luego conectamos el equipo y esperamos a que se complete el proceso. Una vez realizado, usamos el filtro `dhcp` para observar solo los paquetes que nos interesan.
 
 ## DHCP DISCOVER
-El cliente se conecta a la red. Envía un broadcast con IP destino 255.255.255.255 puerto destino 67. Como origen, utiliza la dirección 0.0.0.0:68. 
+El cliente se conecta a la red. Envía un broadcast con IP destino `255.255.255.255` puerto destino `67`. Como origen, utiliza la dirección `0.0.0.0:68`. 
 Esta solicitud llegará a todos los dispositivos dentro de la misma subred, pero solo será atendida si existe un servidor DHCP escuchando el puerto 67. 
 
 ![DHCPDISCOVER](images/discover.jpg)
