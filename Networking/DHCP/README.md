@@ -23,9 +23,11 @@ El cliente informa al servidor que acepta su oferta
 ![DHCPREQUEST](images/request.jpg)
 
 ## DHCP ACK
-El servidor crea una entrada que vincula la MAC del cliente con la IP arrendada. Tanto cliente como servidor chequean que la IP no esté en uso (mediante búsqueda ARP o ICMP).
+El servidor crea una entrada que vincula la MAC del cliente con la IP arrendada. 
 
 ![DHCPACK](images/ack.jpg)
+
+Tanto cliente como servidor chequean que la IP no esté en uso (mediante búsqueda ARP o ICMP).
 ![TEST](images/chek.jpg)
 
 Antes que caduque el arrendamiento, el cliente enviará un mensaje DHCP REQUEST para renovarlo. El servidor devuelve con un DHCP ACK y renueva el tiempo de leasing.
