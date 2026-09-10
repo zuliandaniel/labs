@@ -5,9 +5,7 @@ Infraestructure, Networking &amp; Cybersecurity Labs
 - Cybersecurity
 - Microsoft 365
 - Linux
-- Wireshark
-- PowerShell
-- Ansible
+- Automation
 
 # Topics
 
