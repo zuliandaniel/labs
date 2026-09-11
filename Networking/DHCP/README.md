@@ -14,7 +14,7 @@ Esta solicitud llegará a todos los dispositivos dentro de la misma subred, pero
 ![DHCPDISCOVER](images/discover.jpg)
 
 ## DHCP OFFER
-El servidor DHCP tiene configurado un pool de direcciones, las cuales deberá ofrecer a los clientes. Cuando recibe el DHCP DISCOVER, el servidor realiza una oferta al cliente, con una IP del pool mediante un DHCP OFFER. El servidor reserva esta IP a la MAC del cliente, y no la ofrece a ninguna otra solicitud.
+El servidor DHCP tiene configurado un pool de direcciones, las cuales deberá ofrecer a los clientes. Cuando recibe el DHCP DISCOVER, el servidor realiza una oferta al cliente, con una IP del pool mediante un DHCP OFFER. El servidor reserva esta IP a la MAC del cliente, y normalmente evita ofrecerla a otro dispositivo, mientras espera la confirmación.
 
 ![DHCPOFFER](images/offer.jpg)
 
@@ -28,7 +28,7 @@ El servidor crea una entrada que vincula la MAC del cliente con la IP arrendada.
 
 ![DHCPACK](images/ack.jpg)
 
-Tanto cliente como servidor chequean que la IP no esté en uso (mediante búsqueda ARP o ICMP).
+Antes de completarse la asignación, pueden realizarse mecanismos de detección de conflictos. El servidor puede verificar previamente que la dirección ofrecido no esté siendo utilizada, por ejemplo mediante ICMP. Una vez recibido el DHCPACK, el cliente puede realizar una comprobación adicional con ARP. Si detecta que la dirección está en uso, puede enviar un mensaje al servidor para declinar la oferta. 
 ![TEST](images/chek.jpg)
 
 Antes que caduque el arrendamiento, el cliente enviará un mensaje DHCP REQUEST para renovarlo. El servidor devuelve con un DHCP ACK y renueva el tiempo de leasing.
