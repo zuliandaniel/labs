@@ -32,3 +32,12 @@ Tanto cliente como servidor chequean que la IP no esté en uso (mediante búsque
 ![TEST](images/chek.jpg)
 
 Antes que caduque el arrendamiento, el cliente enviará un mensaje DHCP REQUEST para renovarlo. El servidor devuelve con un DHCP ACK y renueva el tiempo de leasing.
+
+## Qué sucede si DHCP falla
+Si el cliente no logra encontrar un servidor DHCP en la red, Windows puede asignar automáticamente una dirección IP APIPA. Estas direcciones pertenecen al rango `169.254.0.0/16`. La presencia de una dirección APIPA suele indicar que el proceso DHCP no pudo completarse correctamente.
+En el cliente podemos verificar el direccionamiento desde el cmd con `ipconfig`
+![apipa](images/apipa.png)
+
+## Conclusión
+Durante el laboratorio se analizó el proceso de asignación de direccionamiento, conocido también como DORA (por las iniciales de los mensajes Discovery, Offer, Request y ACK). Se logró capturar el tráfico DHCP utilizando Wireshark. En las capturas fue posible identificar las cuatro etapas que permiten a un cliente obtener parámetros de red en forma automática. 
+Las capturas y el análisis de este intercambio resulta útil para comprender el funcionamiento del protocolo como así también para diagnosticar problemas de asignación de direcciones IP. 
