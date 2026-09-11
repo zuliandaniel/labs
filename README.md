@@ -1,5 +1,4 @@
-# Labs
-## Infrastructure, Networking &amp; Cybersecurity Labs
+# Infrastructure, Networking &amp; Cybersecurity Labs
 
 - Networking (CCNA)
 - Cybersecurity
@@ -7,11 +6,10 @@
 - Linux
 - Automation
 
-## Topics
+# Labs
 
 ## **Networking**
 - [DHCP](https://github.com/zuliandaniel/labs/blob/main/Networking/DHCP/README.md)
-- 
 
 ## **Cybersecurity**
 - [NMAP](https://github.com/zuliandaniel/labs/tree/main/Cybersecurity/NMAP#readme)
