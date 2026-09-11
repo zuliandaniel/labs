@@ -1,5 +1,5 @@
 # labs
-Infraestructure, Networking &amp; Cybersecurity Labs
+Infrastructure, Networking &amp; Cybersecurity Labs
 
 - Networking (CCNA)
 - Cybersecurity
