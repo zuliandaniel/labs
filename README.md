@@ -8,10 +8,10 @@
 
 # Labs
 
-## **Networking**
+## 🌐 **Networking**
 - [DHCP](https://github.com/zuliandaniel/labs/blob/main/Networking/DHCP/README.md)
 
-## **Cybersecurity**
+## 🔐 **Cybersecurity**
 - [NMAP](https://github.com/zuliandaniel/labs/tree/main/Cybersecurity/NMAP#readme)
 
 Author: Daniel Zulian
