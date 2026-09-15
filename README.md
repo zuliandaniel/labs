@@ -1,17 +1,9 @@
-# Infrastructure, Networking &amp; Cybersecurity Labs
-
-- Networking (CCNA)
-- Cybersecurity
-- Microsoft 365
-- Linux
-- Automation
-
-# Labs
+# Laboratorios de networking, ciberseguridad e infraestructura
 
 ## 🌐 **Networking**
-- [DHCP](https://github.com/zuliandaniel/labs/blob/main/Networking/DHCP/README.md)
+- [DHCP](https://github.com/zuliandaniel/labs/blob/main/Networking/DHCP)
 
 ## 🔐 **Cybersecurity**
-- [NMAP](https://github.com/zuliandaniel/labs/tree/main/Cybersecurity/NMAP#readme)
+- [NMAP](https://github.com/zuliandaniel/labs/tree/main/Cybersecurity/NMAP)
 
-Author: Daniel Zulian
+Autor: Daniel Zulian
