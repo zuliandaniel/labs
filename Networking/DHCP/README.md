@@ -38,6 +38,8 @@ Si el cliente no logra encontrar un servidor DHCP en la red, Windows puede asign
 En el cliente podemos verificar el direccionamiento desde el cmd con `ipconfig`
 ![apipa](images/apipa.png)
 
+Podés descargar el archivo de Wireshark para analizar desde [acá](files/dhcp.pcapng)
+
 ## Conclusión
 Durante el laboratorio se analizó el proceso de asignación de direccionamiento, conocido también como DORA (por las iniciales de los mensajes Discovery, Offer, Request y ACK). Se logró capturar el tráfico DHCP utilizando Wireshark. En las capturas fue posible identificar las cuatro etapas que permiten a un cliente obtener parámetros de red en forma automática. 
 Las capturas y el análisis de este intercambio resulta útil para comprender el funcionamiento del protocolo como así también para diagnosticar problemas de asignación de direcciones IP. 
