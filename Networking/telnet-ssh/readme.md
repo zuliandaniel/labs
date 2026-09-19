@@ -93,7 +93,7 @@ Seleccionamos uno de los paquetes SSH y elegimos `Follow > TCP stream` como lo h
 
 ![SSH](images/wireshark4.jpg)
 
-Todo el tráfico está cifrado. 
+El contenido de la sesión SSH está cifrado. 
 Por último, quedaría probar qué sucede cuando queremos conectarnos por telnet.
 
 ![RST](images/wireshark5.jpg)
