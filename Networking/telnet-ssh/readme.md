@@ -51,7 +51,7 @@ Elegimos la opción `Follow > TCP stream`
 ![STREAM](images/wireshark2.jpg)
 
 En 1 podemos ver la contraseña VTY en texto plano. Luego, en 2 el comando `enable` y la contraseña también en texto plano. En 3 vemos la contraseña de modo privilegiado cifrado. 
-Con esto verificamos que el comando `enable secret` (y también `service password-encryption`) almacena las contraseñas como un hash, y solo la protege dentro de la configuración del dispositivo. Estos comandos no cifran una sesión telnet. 
+Con esto verificamos que el comando `enable secret` almacena las contraseñas como un hash, y solo la protege dentro de la configuración del dispositivo. Estos comandos no cifran una sesión telnet. 
 De esta forma, vemos la necesidad de utilizar un método de acceso remoto más seguro, como SSH. 
 
 ## SSH
