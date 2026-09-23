@@ -5,6 +5,6 @@
 - [Telnet vs SSH](https://github.com/zuliandaniel/labs/tree/main/Networking/telnet-ssh)
 
 ## 🔐 **Cybersecurity**
-- [NMAP](https://github.com/zuliandaniel/labs/tree/main/Cybersecurity/NMAP)
+- [NMAP](https://github.com/zuliandaniel/labs/tree/main/Ciberseguridad/NMAP)
 
 Autor: Daniel Zulian
