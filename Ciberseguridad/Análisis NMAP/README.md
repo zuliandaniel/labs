@@ -1,4 +1,4 @@
-## Análisis de un escaneo con Nmap
+## Nmap: análisis de tráfico con Wireshark
 # Introducción
 En este laboratorio vamos a analizar qué sucede en la red cuando se realiza un escaneo con Nmap sobre un objetivo. Las capturas se harán con Wireshark corriendo sobre la máquina objetivo 
 
