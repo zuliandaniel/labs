@@ -32,9 +32,9 @@ Se suele combinar firmas de detección y umbrales de actividad. Un SYN Scan pued
 
 ## Resumen de comandos utilizados
 
-`-sS` SYN scan, no completa la conexión TCP
-`-sT` escaneo completo
-`-F` escanea los 100 puertos más frecuentes
-`-p 135` escanea exclusiamente el puerto 135
-`-p-` escanea todos los puertos TCP, del 1 al 65535
+- `-sS` SYN scan, no completa la conexión TCP
+- `-sT` escaneo completo
+- `-F` escanea los 100 puertos más frecuentes
+- `-p 135` escanea exclusiamente el puerto 135
+- `-p-` escanea todos los puertos TCP, del 1 al 65535
 
