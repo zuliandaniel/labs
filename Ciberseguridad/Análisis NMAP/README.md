@@ -15,7 +15,7 @@ Ahora observamos la captura de Wireshark, en la víctima. Utilizamos el filtro d
 
 ![nmap](images/nmap2.png)
 
-Veremos a continuación, el comportamiento con uno de los puertos abiertos. Para estos, afinamos el filtro utilizado anteriormente para mostrar el resultado de un solo puerto, por ejemplo el 135: `ip.addr==192.168.100.17 && tcp.port==135`. El puerto recibe la solicitud `SYN` del atacante, y responde según el saludo de las tres vías con un `SYN - ACK `. El proceso debería completarse con un ACK de parte del origen para establecer la comunicación. En cambio, el origen (el host con Nmap) no responde nada y el host destino cierra la comunicación al no recibir respuesta con un `RST`. 
+Veremos a continuación, el comportamiento con uno de los puertos abiertos. Para estos, afinamos el filtro utilizado anteriormente para mostrar el resultado de un solo puerto, por ejemplo el 135: `ip.addr==192.168.100.17 && tcp.port==135`. El puerto recibe la solicitud `SYN` del atacante, y responde según el saludo de las tres vías con un `SYN - ACK `. El proceso debería completarse con un ACK de parte del origen para establecer la comunicación. En cambio, el origen (el host con Nmap) no responde nada y el host destino retransmite varias veces el `SYN- ACK` y finalmente cierra la comunicación al no recibir respuesta con un `RST`. Según la especificación de Nmap, el origen normalmente interrumpe el establecimiento de la conexión mediante un `RST`, aunque aqui no lo hemos podido verificar.
 
 ![nmap](images/nmap3.png)
 
@@ -30,4 +30,11 @@ Se puede realizar un escaneo completo ejecutando el comando `nmap -sT -F 192.168
 Un firewall con detección de intrusiones puede identificar patrones característicos del reconocimiento de puertos. Por ejemplo, múltiples paquetes `SYN` de una misma Ip hacia diferentes puertos, una cantidad elevada de conexiones fallidas o conexiones que se cierran inmediatamente después de establecerse. 
 Se suele combinar firmas de detección y umbrales de actividad. Un SYN Scan puede detectarse porque el saludo de las tres vías no se completa. Sin embargo, no toda conexión incompleta ni todo escaneo constituye un ataque. Un pentest autorizado o una herramienta de inventario podría producir tráfico similar. 
 
+## Resumen de comandos utilizados
+
+`-sS` SYN scan, no completa la conexión TCP
+`-sT` escaneo completo
+`-F` escanea los 100 puertos más frecuentes
+`-p 135` escanea exclusiamente el puerto 135
+`-p-` escanea todos los puertos TCP, del 1 al 65535
 
